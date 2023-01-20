@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Dashboad">
+    <title>Dashboard B</title>
+
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- style file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class="pageContainer">
+        <nav>
+            <div class="logo">
+                <h3>MoBlack</h3>
+            </div>
+
+            <ul>
+                <li><a aria-label="Dashboard" href="index.html" class="active"><i class="fa-regular fa-chart-bar"></i> <span>Dashboard</span></a></li>
+                <li><a aria-label="Settings" href="settings.html"><i class="fa-solid fa-sliders"></i> <span>Settings</span></a></li>
+                <li><a aria-label="Profile" href="profile.html"><i class="fa-solid fa-user"></i> <span>Profile</span></a></li>
+                <li><a aria-label="projects" href="projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a></li>
+                <li><a aria-label="Courses" href="courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses</span></a></li>
+                <li><a aria-label="Frinds" href="friends.html"><i class="fa-solid fa-user-group"></i> <span>Frinds</span></a></li>
+                <li><a aria-label="Files" href="files.html"><i class="fa-solid fa-file"></i> <span>Files</span></a></li>
+                <li><a aria-label="Plans" href="plans.html"><i class="fa-solid fa-map"></i> <span>Plans</span></a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <header>
+                <div class="search">
+                    <i class="fa-brands fa-searchengin"></i>
+                    <input type="text" placeholder="Type A Keyward">
+                </div>
+                <div class="user">
+                    <div class="noti"><i class="fa-regular fa-bell"></i></div>
+                    <img src="imags/avatar.png" alt="Avatar Logo">
+                </div>
+            </header>
+
+            <!-- Content Here -->
+            <section class="dashboard">
+                <div class="headOfPage">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="dashboardContent">
+                    <div class="t">
+                        <div class="welcome">
+                            <div class="head">
+                                <div class="w">
+                                    <h2>Welcome</h2>
+                                    <span>BLACK</span>
+                                </div>
+                                <div class="img">
+                                    <img src="imags/welcome.png" alt="welcome">
+                                </div>
+                                <img class="welAvatar" src="imags/avatar.png" alt="welcome avatar">
+                            </div>
+                            
+                            <div class="about">
+                                <div>
+                                    <h3>Mo Black</h3>
+                                    <span>Developer</span>
+                                </div>
+                                <div>
+                                    <h3>80</h3>
+                                    <span>Projects</span>
+                                </div>
+                                <div>
+                                    <h3>$8500</h3>
+                                    <span>Earned</span>
+                                </div>
+                            </div>
+                            <div class="welcomeBtn">
+                                <button class="btn-shape"><a href="profile.html">Profile</a></button>
+                            </div>
+                        </div>
+                        <div class="draft">
+                            <h2 class="titleHead">Quick Draft</h2>
+                            <p class="parHead">Write A Draft For Your Ideas</p>
+                            <input type="text" placeholder="Title">
+                            <textarea name="though" cols="40" rows="10" placeholder="Your Thought"></textarea>
+                            <div class="welcomeBtn">
+                                <button class="btn-shape"><a href="profile.html">Profile</a></button>
+                            </div>
+                        </div>
+                        <div class="targets">
+                            <h2 class="titleHead">Yearly Targets</h2>
+                            <p class="parHead">Targets Of The Year</p>
+
+                            <div class="targetsProj">
+                                <div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="proj">
+                                        <span>Money</span>
+                                        <span>$20.000</span>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <div class="proj">
+                                        <span>Projects</span>
+                                        <span>24</span>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <div class="proj">
+                                        <span>Team</span>
+                                        <span>12</span>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics">
+                            <h2 class="titleHead">Tickets Statistics</h2>
+                            <p class="parHead">Everything About Support Tickets</p>
+
+                            <div class="tic">
+                                <div>
+                                    <i class="fa-regular fa-rectangle-list"></i>
+                                    <span>2500</span>
+                                    <span>Total</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-spinner"></i>
+                                    <span>500</span>
+                                    <span>Pending</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <span>1900</span>
+                                    <span>Closed</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-rectangle-xmark"></i>
+                                    <span>100</span>
+                                    <span>Deleted</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="projects"></div>
+                </div>
+            </section>
+            <!-- Content Here -->
+        </section>
+    </div>
+
+</body>
+</html>
