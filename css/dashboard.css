@@ -462,3 +462,37 @@
 .done h3, .done p {
     text-decoration: line-through;
 }
+
+/* start items  */
+
+.dashboard .items .itemsContent {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .items .itemsContent span {
+    color: #888;
+}
+
+.dashboard .items .itemsContent ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dashboard .items .itemsContent div:nth-child(2) ul {
+    align-items: flex-end;
+}
+
+.dashboard .items .itemsContent div:nth-child(2) ul li {
+    background-color: #eee;
+    /* padding: 5px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px; */
+}
