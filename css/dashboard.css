@@ -424,3 +424,41 @@
         flex-direction: column;
     }
 }
+
+/* start tasks */
+
+.dashboard .tasks .tasksContent {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.dashboard .tasks .tasksContent > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .tasks .tasksContent>div div h3{
+    font-size: 17px;
+    color: #121212;
+}
+
+.dashboard .tasks .tasksContent>div div p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #888;
+}
+
+.dashboard .tasks .tasksContent>div i {
+    color: #121212;
+}
+
+.done {
+    opacity: 0.4;
+}
+
+.done h3, .done p {
+    text-decoration: line-through;
+}
