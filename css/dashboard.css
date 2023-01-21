@@ -554,3 +554,94 @@
     -o-border-radius: 6px;
     font-size: 14px;
 }
+
+/* start progress */
+
+.dashboard .progress {
+    position: relative;
+}
+
+.dashboard .progress img {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    right: 0;
+    opacity: 0.2;
+}
+
+.dashboard .progress .progressContent {
+    margin-top: 25px;
+    position: relative;
+}
+
+.dashboard .progress .progressContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.dashboard .progress .progressContent ul li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.dashboard .progress .progressContent ul li > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #0075ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dashboard .progress .progressContent ul li:not(:nth-child(5))>div::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 2px;
+    height: 32px;
+    background-color: #0075ff;
+}
+
+.progFinsh {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #0075ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progWaiting {
+    animation: waiting 1s ease-in-out infinite;
+    -webkit-animation: waiting 1s ease-in-out infinite;
+}
+
+@keyframes waiting {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard .progress img {
+        display: none;
+    }
+}
