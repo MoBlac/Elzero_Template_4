@@ -767,3 +767,124 @@
     align-items: center;
     color: #888;
 }
+
+/* start smState */
+
+.dashboard .smState .smStateContent {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard .smState .smStateContent .sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(1) {
+    background-color: #1DA1F240;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(2) {
+    background-color: #1876f240;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(3) {
+    background-color: #FF000040;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(4) {
+    background-color: #0077B540;
+}
+
+.dashboard .smState .smStateContent .sm > div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard .smState .smStateContent .sm>div .smIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.dashboard .smState .smStateContent .sm>div .smIcon:hover {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(1) >div .smIcon{
+    background-color: #1DA1F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(2)>div .smIcon {
+    background-color: #1877F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(3)>div .smIcon {
+    background-color: #FF0000;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(4)>div .smIcon {
+    background-color: #0077B5;
+}
+
+.dashboard .smState .smStateContent .sm>div .smIcon i {
+    font-size: 25px;
+}
+
+.dashboard .smState .smStateContent .sm>div span {
+    font-size: 18px;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(1)>div span {
+    color: #1DA1F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(2)>div span {
+    color: #1877F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(3)>div span {
+    color: #FF0000;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(4)>div span {
+    color: #0077B5;
+}
+
+.dashboard .smState .smStateContent .sm button {
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(1) button{
+    background-color: #1DA1F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(2) button {
+    background-color: #1877F2;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(3) button {
+    background-color: #FF0000;
+}
+
+.dashboard .smState .smStateContent .sm:nth-child(4) button {
+    background-color: #0077B5;
+}
