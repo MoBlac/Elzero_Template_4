@@ -80,3 +80,52 @@ textarea {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+
+/* start generalInfo */
+
+.generalInfo .generalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px !important;
+}
+
+.generalContent > div {
+    position: relative;
+}
+
+.generalContent label {
+    position: absolute;
+    top: -25px;
+    color: #888;
+}
+
+.generalContent input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.generalContent div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.generalContent div:nth-child(3) span {
+    background-color: #0075ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
