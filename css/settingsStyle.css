@@ -219,3 +219,46 @@ textarea {
 .socInfo .socContent > div:focus-within i {
     color: #121212;
 }
+
+/* start widControl */
+
+.widControl .widContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.widControl .widContent > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.widControl .widContent input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.widControl .widContent i {
+    display: none;
+}
+
+.widControl .widContent input:checked {
+    background-color: #0075ff;
+    border: none;
+}
+
+.widControl .widContent input:checked + i {
+    display: block;
+    position: absolute;
+    color: white;
+    left: 2px;
+}
