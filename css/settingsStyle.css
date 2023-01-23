@@ -9,6 +9,74 @@
     --grey-color: #888;
 }
 
+textarea {
+    resize: none;
+}
+
+.titleHead {
+    font-size: x-large;
+}
+
+.parHead {
+    font-size: 15px;
+    color: #888;
+    margin-top: 15px;
+}
+
 .settings {
     padding: 20px;
+}
+
+.settings .settingsContent {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.settings .settingsContent > div {
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 20px;
+}
+
+.settings .settingsContent > div > div {
+    margin-top: 25px;
+}
+
+/* start siteControl */
+
+.siteControl .ControlContent .openClose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.siteControl .ControlContent .openClose h4 {
+    font-weight: 600;
+}
+
+.siteControl .ControlContent .openClose p {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+.siteControl .ControlContent textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }

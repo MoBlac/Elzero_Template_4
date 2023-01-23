@@ -61,6 +61,83 @@ button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+
+/* open and close */
+.openCloseControl input {
+    appearance: none;
+    display: none;
+}
+
+.openCloseControl .toggle-switch {
+    width: 70px;
+    height: 30px;
+    background-color: #0075ff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.openCloseControl .toggle-switch div {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.openCloseControl i {
+    display: none;
+}
+
+
+.openCloseControl input:not(:checked)+.toggle-switch div {
+    right: 58%;
+}
+
+.openCloseControl input:checked+.toggle-switch div i:nth-child(1) {
+    display: block !important;
+    color: #0075ff;
+}
+
+.openCloseControl input:not(:checked)+.toggle-switch {
+    background-color: #888;
+}
+
+.openCloseControl input:not(:checked)+.toggle-switch div i:nth-child(2) {
+    display: block !important;
+    color: #888;
+}
+
 /* start pageContainer */
 
 .pageContainer {
