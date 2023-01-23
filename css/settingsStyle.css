@@ -129,3 +129,48 @@ textarea {
     -o-border-radius: 10px;
     cursor: pointer;
 }
+
+/* start secInfo */
+
+.secInfo .secContent {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.secInfo .secContent > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secInfo .secContent>div h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.secInfo .secContent>div p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #888;
+}
+
+.secInfo .secContent >div span {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.secInfo .secContent>div:nth-child(1) span{
+    background-color: #0075ff;
+}
+
+.secInfo .secContent>div:nth-child(3) span {
+    background-color: #eee;
+    color: #121212;
+}
