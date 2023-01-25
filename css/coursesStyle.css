@@ -16,7 +16,7 @@
 .coursesContent {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -35,7 +35,7 @@
     height: 250px;
 }
 
-.coursesContent > div:nth-child(1) .head,.coursesContent>div:nth-child(6) .head {
+/* .coursesContent > div:nth-child(1) .head,.coursesContent>div:nth-child(6) .head {
     background: url("/imags/course-01.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -68,11 +68,17 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
+} */
 
 .coursesContent .head img {
+    width: 100%;
+    height: 100%;
+}
+
+.coursesContent .head .img {
     position: absolute;
     width: 70px;
+    height: 70px;
     top: 20px;
     left: 20px;
     border: 2px solid #fff;
