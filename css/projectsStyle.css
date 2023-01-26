@@ -1,0 +1,189 @@
+/* Global roles */
+
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.projects .projectsContent {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.projectCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+}
+
+.projectCard .date {
+    position: absolute;
+    right: 15px;
+}
+
+.projectCard .date span {
+    color: #888;
+    font-size: 14px;
+}
+
+.projectCard > h3 {
+    font-weight: 400;
+}
+
+.projectCard>p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    color: #888;
+}
+
+.projectCard .users {
+    display: flex;
+    margin-top: 50px;
+}
+
+.projectCard .users a{
+    margin-left: -10px;
+}
+
+.projectCard .users a:nth-child(1) {
+    margin-left: 0px;
+}
+
+.projectCard .users a img{
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid white;
+}
+
+.projectCard .skills {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.projectCard .skills span {
+    background-color: #eee;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.projectCard .prog {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.projectCard .prog div {
+    width: 250px;
+    height: 7px;
+    background-color: #eee;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectCard .prog div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.projectsContent .projectCard:nth-child(1) .prog div::after {
+    background-color: #f44336;
+    width: 80%;
+}
+
+.projectsContent .projectCard:nth-child(2) .prog div::after {
+    background-color: #0d69d5;
+    width: 50%;
+}
+
+.projectsContent .projectCard:nth-child(3) .prog div::after {
+    background-color: #22c55e;
+    width: 30%;
+}
+
+.projectsContent .projectCard:nth-child(4) .prog div::after {
+    background-color: #f59e0b;
+    width: 15%;
+}
+
+.projectsContent .projectCard:nth-child(5) .prog div::after {
+    background-color: #f44336;
+    width: 90%;
+}
+
+.projectsContent .projectCard:nth-child(6) .prog div::after {
+    background-color: #0075ff;
+    width: 60%;
+}
+
+.projectsContent .projectCard:nth-child(7) .prog div::after {
+    background-color: #22c55e;
+    width: 40%;
+}
+
+.projectsContent .projectCard:nth-child(8) .prog div::after {
+    background-color: #f59e0b;
+    width: 20%;
+}
+
+.projectsContent .projectCard:nth-child(9) .prog div::after {
+    background-color: #f44336;
+    width: 85%;
+}
+
+.projectCard .prog span {
+    font-size: 14px;
+    color: #888;
+}
+
+@media (min-width: 768px) {
+    .projectCard .skills {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .projectCard .prog {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
